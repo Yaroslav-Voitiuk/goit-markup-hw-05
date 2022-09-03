@@ -44,7 +44,7 @@
         <section class="business-solutions section">
             <div class="container">
                 <h1 class="business-text">Ефективні рішення для вашого бізнесу</h1>
-                <button class="button-text" type= "button">Замовити послугу</button>
+                <button class="button-text" type= "button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!--ОСОБЛИВОСТІ І ПЕРЕВАГИ-->
@@ -96,14 +96,17 @@
             <div class="container">
                 <h2 class="work-title">Чим ми займаємось</h2>
                 <ul class="list product-img">
-                    <li>
+                    <li class="product-cards">
                         <img src="./images/box1.jpg" alt="Код на планшеті" width = "370" height = "294" />
+                        <p class="product-overley">Десктопні додатки</p>
                     </li>
-                    <li>
+                    <li class="product-cards">
                         <img src="./images/box2.jpg" alt="Телефон" width = "370" height = "294" />
+                        <p class="product-overley">Мобільні додатки</p>
                     </li>
-                    <li>
+                    <li class="product-cards">
                         <img src="./images/box3.jpg" alt="Колір" width = "370" height = "294" />
+                        <p class="product-overley">Дизайнерські рішення</p>
                     </li>                
                 </ul>
             </div>
@@ -361,5 +364,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden  " data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" type="button" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
 </body>
 </html>
